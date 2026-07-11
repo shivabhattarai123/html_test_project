@@ -1,36 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Shiva Bhattarai, a Bachelor of Information Technology student specializing in web development, Python, Django, and cybersecurity.">
+    <meta name="author" content="Shiva Bhattarai">
+    <title>Shiva Bhattarai | Portfolio</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Profile</h1>
+        <h1>Shiva Bhattarai</h1>
+        <p>Bachelor of Information Technology Student &mdash; Web Development &amp; Cybersecurity</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Contact</a>
-    </nav>
-
+    <!-- Main Content -->
     <main>
 
-        <section>
-            <h2>About Me</h2>
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+
+            <img src="profile.jpg" alt="Profile picture of Shiva Bhattarai" width="200" height="250">
+
+            <p>
+                I am a Bachelor of Information Technology (BIT) student from
+                Nepal with a strong interest in web development, Python,
+                Django, and cybersecurity. I enjoy building websites and
+                continually improving my technical skills.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
+
+            <details>
+                <summary>HTML5</summary>
+                <p>Semantic, accessible web page structure.</p>
+            </details>
+
+            <details>
+                <summary>Python</summary>
+                <p>Programming fundamentals and scripting.</p>
+            </details>
+
+            <details>
+                <summary>Django</summary>
+                <p>Web application development.</p>
+            </details>
+
+            <details>
+                <summary>Git &amp; GitHub</summary>
+                <p>Version control and collaboration.</p>
+            </details>
+            <details>
+                <summary>Cybersecurity Basics</summary>
+                <p>Understanding of security principles and practices.</p>
+            </details>
+            <details>
+             <summary>Linux</summary>
+                <p>Familiarity with Linux operating system and command-line interface.</p>
+            </details>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
 
             <article>
-                <p>Hello! My name is Shiva Bhattarai. I am a BIT first-year student from Nepal. I enjoy learning HTML, programming, and networking. My goal is to become a software developer.</p>
+                <h3>Student Portfolio Website</h3>
+                <p>A personal portfolio built with semantic HTML5 to showcase my profile, skills, and projects.</p>
+                <p>
+                    <a href="https://github.com/shivabhattarai123/html_test_project.git" target="_blank" rel="noopener noreferrer">
+                        View Repository
+                    </a>
+                </p>
             </article>
 
+            <article>
+                <h3>Blog Project</h3>
+                <p>A blog application built with Python and Django, featuring full CRUD functionality.</p>
+                <p>
+                    <a href="https://github.com/shivabhattarai123/Blogporject.repo.git" target="_blank" rel="noopener noreferrer">
+                        View Repository
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+
+            <address>
+                Kathmandu, Nepal<br>
+                Email: <a href="mailto:shivabhattarai2063@.com">shivabhattarai2063@.com</a><br>
+                GitHub: <a href="https://github.com/shivabhattarai123" target="_blank" rel="noopener noreferrer">github.com/shivabhattarai12</a>
+            </address>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Shiva Bhattarai</p>
+        <p>&copy; 2026 Shiva Bhattarai. All Rights Reserved.</p>
     </footer>
 
 </body>
